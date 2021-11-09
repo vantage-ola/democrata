@@ -30,12 +30,25 @@ class App extends Component {
 		  answers: newAnswers
 		})
 	}
+	componentDidMount() {
+		const { answers } = this.state
+		this.addRandomVote(answers)
+	}
+	addRandomVote = (answers) => {
+		setTimeout(() => {
+			const ranAnswer = parseInt(Math.random() * 2, 10)
+			this.handleVote(answers[ranAnswer].option, answers)
+			this.addRandomVote(answers)
+		}, Math.random() * 6000)
+	}
+
 
 	render () {
 		const { answers } = this.state
+
 		return (
 			<>
-			
+
 			<Header/>
 			<div className='center'>
 				<Poll question={questions} answers={answers} onVote={this.handleVote} customStyles={styles}/>
