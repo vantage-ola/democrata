@@ -5,7 +5,7 @@ A Polling App
 ---
 ### 1. Clone the repository:
 ```shell
-git clone git@github.com:vantage-ola/lyrical.git
+git clone git@github.com:vantage-ola/democrata.git
 ```
 ### 2. Create your branch:
 Name your branch based on the feature you are working on. For example, Writing README branch would be called `feature/write_readme`:
