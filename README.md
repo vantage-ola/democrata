@@ -1,7 +1,6 @@
 ![logo](./src/img/logo.png)
 
 A Polling App
-
 ## Development
 ---
 ### 1. Clone the repository:
