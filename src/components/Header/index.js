@@ -11,16 +11,12 @@ const Header = () => {
 			<Content>
 				<Link to="/">
 					<LogoImg src={img} alt="democrata-logo"/>
-
 				</Link>
 			<Menu>
 				<Link to="/poll">
-
-				<MenuLink>polls</MenuLink>
-				
+					<MenuLink>polls</MenuLink>
 				</Link>
 			</Menu>
-
 			</Content>
 		</Wrapper>
 	)
