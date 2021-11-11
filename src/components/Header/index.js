@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import { Wrapper, Content, LogoImg, Menu, MenuLink } from "./Header.styles";
 
@@ -8,9 +9,16 @@ const Header = () => {
 	return (
 		<Wrapper>
 			<Content>
-				<LogoImg src={img} alt="democrata-logo"/>
+				<Link to="/">
+					<LogoImg src={img} alt="democrata-logo"/>
+
+				</Link>
 			<Menu>
-					<MenuLink>polls</MenuLink>
+				<Link to="/poll">
+
+				<MenuLink>polls</MenuLink>
+				
+				</Link>
 			</Menu>
 
 			</Content>
